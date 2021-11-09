@@ -1,0 +1,162 @@
+
+body{
+    background-image: url(img/fondo2.1.2.jpg);
+    font-family: 'Montserrat', sans-serif;;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #ae1717;
+    text-shadow: 1px 1px 1px grey;
+}
+h2 span{
+    color: #ffff;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px grey;
+}
+.pregunta{
+    background-color: #f4d09a;
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 1.5% 20%;
+    border-radius: 5px;
+    border: 5px solid #ffff;
+}
+.imagen{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pregunta .imagen img{
+    width: 100%;
+    border-radius: 5px;
+}
+.pregunta label, .pregunta select{
+    display: block;
+    font-size: 20px;
+    padding:20px;
+    padding-left: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.pregunta #label2 {
+    cursor: auto;
+}
+.pregunta #label2:hover{
+    background-color: #f4d09a;
+}
+.pregunta select{
+    width: 80%;
+    margin: auto;
+    background-color: #fff6ec;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.pregunta select option{
+    text-align: center;
+}
+.pregunta label:hover, div.boton button:hover, div.boton-rdo button:hover{
+    /*background-color: #fff6ec;*/
+    /*background-color: #ae1717; ROJO */ 
+    background-color: #fae9cf;
+}
+.pregunta input{
+    appearance: none;
+}
+
+.pregunta input:checked{
+    background-color: #ae1717;
+}
+.pregunta .rta{
+    display: none;
+    color:#fff;
+    background-color: #105615;
+    font-style: italic;
+    width: 90%;
+    padding:1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.pregunta .mostrar-img{
+    width: 20px;    
+    float: right;
+    display: none;
+    margin-top: -45px;
+    margin-right: 20px;
+}
+.pregunta .mostrar-img1{
+    width: 20px;    
+    float: right;
+    display: none;
+    margin-top: -60px;
+    margin-right: 20px;
+}
+/*
+.pregunta div.ok-err img{
+    width: 20px; 
+} */
+.boton{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+div.boton button{
+    background-color: #f4d09a;
+    padding: 10px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.fondo-resultado{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: lightgrey;
+    z-index: 100;
+    display: none;
+}
+div.resultado{
+    width: 70%;
+    padding: 40px;
+    background-color:#f4d09a;
+    position: fixed;
+    top: 10%;
+    left: calc(100%/9);
+    text-align: center;
+    border: 5px solid #ffff;
+    box-shadow: 1px 20px 50px black;
+    z-index: 500;
+}
+div.resultado img{
+    width: 50%;
+    padding:20px;
+}
+div.resultado h3, div.resultado p{
+    font-size: 30px;
+    margin-top: 0;
+}
+div.boton-rdo{
+    margin: auto;
+}
+.boton-rdo button{
+    width: 30%;
+    background-color: #ffff;
+    margin: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}

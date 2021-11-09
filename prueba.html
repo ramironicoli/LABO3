@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>TRIVIA</title>
+</head>
+<body>
+    
+
+    <h1 class="animate__animated animate__pulse">TRIVIA - The Office US</h1>
+    <div class="pregunta">
+
+        <div class="imagen">
+            <img src="img/protagonista.jpg" alt="Steve Carrell - The Office">
+        </div>
+
+        <h2><span>1/5 - </span> ¿Cómo es el nombre del protagonista?</h2>
+
+        <input type="radio" name="q1" id="a1">
+        <label for="a1" id="a1-1">Dwight Schrute</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+
+        <input type="radio" name="q1" id="a2">
+        <label for="a2" id="a2-1">Marcus Rashford</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+
+        <input type="radio" name="q1" id="a3">
+        <label for="a3" id="a3-1">Michael Scott</label>
+        <img src="img/ok.png" alt="rta" class="mostrar-img">
+
+        <input type="radio" name="q1" id="a4">
+        <label for="a4" id="a4-1">Jim Halpert</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+
+        <div class="rta">
+            <p>El protagonista de la serie The Office US es Michael Scott, interpretado por Steve Carrell.</p>
+        </div>
+    </div>
+
+    <div class="pregunta">
+        <div class="imagen">
+            <img src="img/jyp.jpg" alt="Jim y Pam - Casamiento">
+        </div>
+        <h2><span>2/5 - </span> Complete la oración.</h2>
+            
+          <label for="child" id="label2">Jim y <input type="text" name="children" id="child" maxlength="11" placeholder="Ingrese un nombre">  se comprometen y tienen 2 hijos</label>
+        
+        <div class="rta">
+            <p>Jim Halpert y Pam Beesley se casan en la temporada 6 y luego tienen 2 hijos: Cece Halpert y Philip Halpert.</p>
+        </div>
+    </div>
+    
+    <div class="pregunta">
+        <div class="imagen">
+            <img src="img/incendio.jpg" alt="Incendio en la oficina">
+        </div>
+        <h2><span>3/5 - </span> ¿Quién provoca el "incendio" en la oficina? </h2>
+            
+            <input type="radio" name="q2" id="b1">
+            <label for="b1" id="b1-1">Jan Levinson </label>
+            <img src="img/ok.png" alt="rta" class="mostrar-img">
+
+            <input type="radio" name="q2" id="b2">
+            <label for="b2" id="b2-1">Kelly Kapoor</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+            <input type="radio" name="q2" id="b3">
+            <label for="b3" id="b3-1">Angela Martin</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+            <input type="radio" name="q2" id="b4">
+            <label for="b4" id="b4-1">Dwight Schrute</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+        <div class="rta">
+            <p>El falso incendio lo provoca Dwight Scrute para que los compañeros "aprendan" qué es lo que se hace en un verdadero incendio.</p>
+        </div>
+    </div>
+
+
+    <div class="pregunta">
+        <div class="imagen">
+            <img src="img/bigtuna.jpg" alt="Big Tuna img">
+        </div>
+        <h2><span>4/5 - </span>¿A quién apodan "Big Tuna"?</h2>
+            
+            <input type="radio" name="q3" id="c1">
+            <label for="c1" id="c1-1">Kevin Malone</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+            <input type="radio" name="q3" id="c2" >
+            <label for="c2" id="c2-1">Ryan Howard</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+            <input type="radio" name="q3" id="c3">
+            <label for="c3" id="c3-1">Jim Halpert</label>
+            <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+            <input type="radio" name="q3" id="c4">
+            <label for="c4" id="c4-1">Creed Bratton</label>
+            <img src="img/ok.png" alt="rta" class="mostrar-img">
+        
+        <div class="rta">
+            <p>En el primer capitulo de la segunda temporada, Andy Bernard apoda a Jim "Big Tuna" porque habia llevado un sandwich de atun al trabajo.</p>
+        </div>
+    </div>
+
+
+
+    <div class="pregunta">
+        <div class="imagen">
+            <img src="img/michael.jpg" alt="Ejemplo">
+        </div>
+        <h2><span>5/6 - </span> ¿Cúal es la famosa frase que repite Michael Scott durante la serie?</h2>
+        <label for="frase"></label>
+        <select name="frase" id="frases">
+            <option value="1">Seleccione una opcion...</option>
+            <option value="2">"If I don't have some cake soon, I might die."</option>
+            <option value="3">"Thats what she said."</option>
+            <option value="4">"Im not superstitious, but im a little stitious."</option>
+            <option value="5">"I knew exactly what to do. But in a much more real sense, I had no idea what to do."</option>
+        </select>
+        <div class="ok-err" id="ok-err1">
+            <!--JS-->
+        </div>
+        <div class="rta">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit facilis dolore repellendus molestiae, iste doloribus doloremque adipisci maxime perferendis impedit quia sint veniam fuga commodi aut sed laboriosam enim?</p>
+        </div>
+    </div>
+    
+    <div class="pregunta">
+        <div class="imagen">
+            <img src="img/dwight.jpg" alt="Dwight Schrute - The Office">
+        </div>
+        <h2><span>6/6 - </span> ¿Cúal es el nombre la posada que administra "Dwight"?</h2>
+        
+        <input type="radio" name="q4" id="d1">
+        <label for="d1" id="d1-1">Schrute Farms</label>
+        <img src="img/ok.png" alt="rta" class="mostrar-img">
+        
+        <input type="radio" name="q4" id="d2">
+        <label for="d2" id="d2-1">Scranton Farms</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+        <input type="radio" name="q4" id="d3">
+        <label for="d3" id="d3-1">Schruteland</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+        
+        <input type="radio" name="q5" id="d4">
+        <label for="d4" id="d4-1">Schrute Tags</label>
+        <img src="img/error.png" alt="rta" class="mostrar-img">
+    
+        <div class="rta">
+            <p>Dwight maneja un hospedaje que tiene como nombre Schrute Farms, donde tambien vive su primo Mose.</p>
+        </div>
+    </div>
+
+    <div class="boton">
+        <button id="fin">FIN</button>
+    </div>
+
+    <div class="fondo-resultado" id="rdo">
+        <div class="resultado">
+            <h3>RESULTADO FINAL</h3>
+            <p id="resultado-final"></p> 
+            <div id="quote"></div>
+            <h3>¡GRACIAS POR PARTICIPAR!</h3>
+            <div class="boton-rdo">
+                <button id="ver-rtas">Ver respuestas</button>
+                <button class="rewind" id="rewind">Volver a intentarlo</button>
+            </div>
+        </div>
+    </div>   
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
